@@ -1,0 +1,3 @@
+1) change "test" to "start": "nodemon index" in package.json
+2) npm i cloudinary cors dotenv express mongoose nodemon openai
+3) "type": "module", for ES6+ import/export instead of CommonJS require('')

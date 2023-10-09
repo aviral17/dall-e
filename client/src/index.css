@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+.community {
+  font-family: "Poppins", sans-serif;
+  color: rgba(29, 29, 85, 0.656);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+  .card:nth-child(7n + 1) {
+    grid-column: auto/span 2;
+    grid-row: auto/span 2;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Change the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ce1313; /* Change the background color of the scrollbar thumb */
+  border-radius: 5px; /* Change the border radius of the scrollbar thumb */
+}
+
+.prompt::-webkit-scrollbar {
+  width: 5px;
+}
+
+.prompt::-webkit-scrollbar-thumb {
+  background-color: #666e75;
+  border-radius: 5px;
+}
