@@ -29,7 +29,11 @@ const Home = () => {
         {
           method: "GET",
           headers: {
+            Accept: "application/json",
             "Content-Type": "application/json",
+            "Access-Control-Allow-Credentials": true,
+            "Access-Control-Allow-Origin":
+              "https://dall-e-gamma-eight.vercel.app/api/v1/post",
           },
         }
       );

@@ -23,8 +23,10 @@ app.use(function (req, res, next) {
 // app.use(cors());
 app.use(
   cors({
-    origin: ["https://dall-e-client-brown.vercel.app"],
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    origin: "*",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
     credentials: true,
   })
 );
