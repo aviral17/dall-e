@@ -20,19 +20,19 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(cors());
-// app.use(
-//   cors({
-//     origin: ["https://dall-e-client-brown.vercel.app"],
-//     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-//     credentials: true,
-//   })
-// );
+// app.use(cors());
+app.use(
+  cors({
+    origin: ["https://dall-e-client-brown.vercel.app"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentials: true,
+  })
+);
 
-// app.use((req, res, next) => {
-//   res.setHeader("Access-Control-Allow-Origin", "*");
-//   next();
-// });
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  next();
+});
 app.use(express.json({ limit: "50mb" }));
 
 app.use("/api/v1/post", postRoutes);
