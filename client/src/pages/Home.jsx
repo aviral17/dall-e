@@ -28,12 +28,9 @@ const Home = () => {
         "https://dall-e-gamma-eight.vercel.app/api/v1/post",
         {
           method: "GET",
+          mode: "no-cors", // no-cors mode
           headers: {
-            Accept: "application/json",
             "Content-Type": "application/json",
-            "Access-Control-Allow-Credentials": true,
-            "Access-Control-Allow-Origin":
-              "https://dall-e-gamma-eight.vercel.app/api/v1/post",
           },
         }
       );

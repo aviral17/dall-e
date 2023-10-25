@@ -23,6 +23,7 @@ const CreatePost = () => {
           "https://dall-e-gamma-eight.vercel.app/api/v1/dalle",
           {
             method: "POST",
+            mode: "no-cors", // no-cors mode
             headers: {
               "Content-Type": "application/json",
             },
@@ -54,6 +55,7 @@ const CreatePost = () => {
           "https://dall-e-gamma-eight.vercel.app/api/v1/post",
           {
             method: "POST",
+            mode: "no-cors", // no-cors mode
             headers: {
               "Content-Type": "application/json",
             },
