@@ -24,6 +24,8 @@ const Card = ({ _id, name, prompt, photo }) => {
             </div>
             <p className="text-white text-sm uppercase">{name}</p>
           </div>
+
+{/*           corrected and updated it as per requirements */}
           <button
             type="button"
             onClick={() => downloadImage(_id, photo)}
