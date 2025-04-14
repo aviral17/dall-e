@@ -31,6 +31,7 @@ router.route("/").get(async (req, res) => {
   }
 });
 
+// updated home routes
 router.route("/").post(async (req, res) => {
   try {
     const { name, prompt, photo } = req.body;
